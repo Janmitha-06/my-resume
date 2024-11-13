@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Janmitha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Janmitha - Resume</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.E. in Computer Science and Engineering</strong><br>
+                    Vivekananda Engineering College, Puttur (Currently in 3rd year)
+                </li>
+                <li><strong>Pre-University Course at Indraprastha PU College,Uppinangady in 2022</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>C++, Java, Python, SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="project-title" onclick="toggleDescription('project1')"><strong>Mushroom Identification Web App:</strong></a>
+                    <p id="project1" class="project-description" style="display:none;">This project is a web application designed to help users identify edible and poisonous mushrooms. It allows users to upload images of mushrooms, which are then processed by a machine learning model to predict whether the mushroom is safe to eat or dangerous. The app utilizes image recognition techniques powered by TensorFlow to ensure accurate mushroom classification.</p>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="project-title" onclick="toggleDescription('project2')"><strong>Multi-page Resume Website:</strong></a>
+                    <p id="project2" class="project-description" style="display:none;">This project is a personal portfolio website created to showcase your skills, resume, projects, and certificates in a professional and visually appealing manner. The website includes various sections such as education, technical skills, projects, certifications, and contact information, making it a comprehensive online resume..</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certificate">
+        <div class="container">
+            <h2>Certificate</h2>
+            <ul>
+                <li><strong>Database And SQL from Infosys Springboard</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Janmitha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        // Function to toggle the visibility of project descriptions
+        function toggleDescription(projectId) {
+            var description = document.getElementById(projectId);
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+  
+</body>
+</html>
